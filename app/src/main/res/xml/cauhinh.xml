@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Database">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="backup"
+            android:summary="Backup data on app exit"
+            android:title="Auto backup app data" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Text">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="bold"
+            android:summary="Bold or normal"
+            android:title="Title of app" />
+
+        <EditTextPreference
+            android:defaultValue="Kids game"
+            android:key="title"
+            android:summary="Kids game"
+            android:title="Kids game" />
+    </PreferenceCategory>
+</PreferenceScreen>
