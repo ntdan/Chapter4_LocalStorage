@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Chapter4_LocalStorage</string>
+    <string name="ten_dang_nhap">Ten dang nhap</string>
+    <string name="mat_khau">Mat khau</string>
+</resources>
