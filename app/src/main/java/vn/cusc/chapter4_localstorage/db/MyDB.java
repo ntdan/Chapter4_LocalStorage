@@ -84,4 +84,20 @@ public class MyDB extends SQLiteOpenHelper {
             return null;
         }
     }
+
+    public Customer find(int id) {
+        Cursor cursor;
+        cursor = getReadableDatabase().rawQuery("select id, fullname, email, image from customer where id=" + id, null);
+
+        if (cursor.moveToFirst()) {
+            Customer customer = new Customer();
+            customer.setId(cursor.getInt(0));
+            customer.setFullname(cursor.getString(1));
+            customer.setEmail(cursor.getString(2));
+            customer.setImage(cursor.getString(3));
+            return customer;
+        } else {
+            return null;
+        }
+    }
 }
